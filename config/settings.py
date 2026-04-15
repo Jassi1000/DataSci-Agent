@@ -34,7 +34,7 @@ class Settings(BaseSettings):
 
     # -- LLM -----------------------------------------------------------------
     groq_api_key: str = Field(default="", description="Groq API key")
-    llm_model_name: str = Field(default="llama3-70b-8192", description="Groq model name")
+    llm_model_name: str = Field(default="llama-3.3-70b-versatile", description="Groq model name")
     llm_temperature: float = Field(default=0.0, ge=0.0, le=1.0, description="LLM sampling temperature")
 
     # -- Data -----------------------------------------------------------------

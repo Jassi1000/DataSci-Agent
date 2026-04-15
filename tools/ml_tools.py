@@ -50,8 +50,8 @@ CLASSIFICATION_MODELS: Dict[str, Any] = {
 
 REGRESSION_MODELS: Dict[str, Any] = {
     "linear_regression": LinearRegression(),
-    "ridge": Ridge(random_state=42),
-    "lasso": Lasso(random_state=42),
+    "ridge": Ridge(alpha=1.0),
+    "lasso": Lasso(alpha=1.0),
     "random_forest_regressor": RandomForestRegressor(n_estimators=100, random_state=42),
     "gradient_boosting_regressor": GradientBoostingRegressor(n_estimators=100, random_state=42),
     "decision_tree_regressor": DecisionTreeRegressor(random_state=42),

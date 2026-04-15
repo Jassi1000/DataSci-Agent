@@ -56,7 +56,7 @@ class EvaluatorAgent:
 
     def __init__(
         self,
-        model_name: str = "llama3-70b-8192",
+        model_name: str = "llama-3.3-70b-versatile",
         temperature: float = 0.1,
     ) -> None:
         api_key = os.environ.get("GROQ_API_KEY")

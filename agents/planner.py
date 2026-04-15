@@ -25,7 +25,7 @@ class PlannerAgent:
     Planner Agent for generating structured execution plans for dataset analysis.
     """
     
-    def __init__(self, model_name: str = "llama3-70b-8192", temperature: float = 0.0):
+    def __init__(self, model_name: str = "llama-3.3-70b-versatile", temperature: float = 0.0):
         api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
             logger.warning("GROQ_API_KEY environment variable is not set. API calls may fail.")

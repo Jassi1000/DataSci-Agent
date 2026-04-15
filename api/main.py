@@ -5,6 +5,7 @@ Exposes the autonomous data-science pipeline as a REST API.
 
 import os
 import io
+import json
 import logging
 import tempfile
 from typing import Optional
@@ -108,6 +109,7 @@ async def analyze_dataset(
         "report_path": final_state.get("report_path"),
     }
 
+    response = json.loads(json.dumps(response, default=str))
     return JSONResponse(content=response)
 
 

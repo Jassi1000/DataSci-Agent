@@ -228,6 +228,9 @@ def encode_categoricals(df: pd.DataFrame, threshold: int = 10) -> pd.DataFrame:
     for col in label_encode_cols:
         le = LabelEncoder()
         non_null_mask = df[col].notna()
+        # Convert to object dtype first to avoid Arrow-backed string type
+        # rejecting integer assignments from LabelEncoder
+        df[col] = df[col].astype(object)
         df.loc[non_null_mask, col] = le.fit_transform(df.loc[non_null_mask, col].astype(str))
         df[col] = pd.to_numeric(df[col], errors="coerce")
         logger.info("Label-encoded column '%s' (%d unique values).", col, df[col].nunique())

@@ -66,7 +66,7 @@ if uploaded_file is not None and run_btn:
         st.stop()
 
     st.subheader("📋 Raw Dataset Preview")
-    st.dataframe(df.head(20), use_container_width=True)
+    st.dataframe(df.head(20), width="stretch")
     st.caption(f"Shape: {df.shape[0]} rows × {df.shape[1]} columns")
 
     # 2. Run pipeline
