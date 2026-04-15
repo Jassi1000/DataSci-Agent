@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from auto_ds_agent.tools.data_tools import (
+from tools.data_tools import (
     get_missing_summary,
     impute_column,
     detect_outliers_iqr,

@@ -16,7 +16,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from auto_ds_agent.tools.ml_tools import cross_validate_model
+from tools.ml_tools import cross_validate_model
 
 logger = logging.getLogger(__name__)
 
