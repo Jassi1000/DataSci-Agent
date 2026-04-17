@@ -18,11 +18,11 @@ logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Locate and load .env into os.environ BEFORE anything else.
-# Resolves relative to the auto_ds_agent package root so it works
+# Resolves relative to the project package root so it works
 # regardless of the working directory.
 # ---------------------------------------------------------------------------
 
-_PACKAGE_ROOT = Path(__file__).resolve().parent.parent  # auto_ds_agent/
+_PACKAGE_ROOT = Path(__file__).resolve().parent.parent  # DataSci-Agent/
 _ENV_FILE = _PACKAGE_ROOT / ".env"
 
 # override=False keeps explicit env vars from being clobbered
