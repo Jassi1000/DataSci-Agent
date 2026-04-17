@@ -1,17 +1,17 @@
 """Tools module initialization.
 
 Exports tool functions for convenient imports:
-    from tools import get_missing_summary, split_data, ...
+    from auto_ds_agent.tools import get_missing_summary, split_data, ...
 """
 
-from .data_tools import (
+from auto_ds_agent.tools.data_tools import (
     get_missing_summary,
     impute_column,
     detect_outliers_iqr,
     fix_dtypes,
     encode_categoricals,
 )
-from .ml_tools import (
+from auto_ds_agent.tools.ml_tools import (
     get_model_registry,
     split_data,
     scale_features,
@@ -21,7 +21,7 @@ from .ml_tools import (
     evaluate_clustering,
     cross_validate_model,
 )
-from .viz_tools import (
+from auto_ds_agent.tools.viz_tools import (
     plot_missing_heatmap,
     plot_correlation_matrix,
     plot_distribution,

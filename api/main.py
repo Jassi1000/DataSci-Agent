@@ -15,8 +15,8 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from orchestrator.graph import run_pipeline
-from config.settings import get_settings
+from auto_ds_agent.orchestrator.graph import run_pipeline
+from auto_ds_agent.config.settings import get_settings
 
 logger = logging.getLogger(__name__)
 settings = get_settings()

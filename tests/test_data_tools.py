@@ -1,21 +1,13 @@
-"""Test suite for DataSci-Agent — data_tools unit tests.
+"""Test suite for auto_ds_agent — data_tools unit tests.
 
 Run with: pytest tests/ -v
 """
-
-import sys
-from pathlib import Path
-
-# Ensure project root is on sys.path for test discovery
-_ROOT = Path(__file__).resolve().parents[1]
-if str(_ROOT) not in sys.path:
-    sys.path.insert(0, str(_ROOT))
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from tools.data_tools import (
+from auto_ds_agent.tools.data_tools import (
     get_missing_summary,
     impute_column,
     detect_outliers_iqr,

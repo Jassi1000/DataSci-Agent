@@ -15,7 +15,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-from tools.viz_tools import (
+from auto_ds_agent.tools.viz_tools import (
     plot_correlation_matrix,
     plot_distribution,
     plot_boxplots,

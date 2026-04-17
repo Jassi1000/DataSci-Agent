@@ -1,15 +1,15 @@
 """Agents module initialization.
 
 Exports all agent classes for convenient imports:
-    from agents import PlannerAgent, DataAgent, ...
+    from auto_ds_agent.agents import PlannerAgent, DataAgent, ...
 """
 
-from .planner import PlannerAgent
-from .data_agent import DataAgent
-from .eda_agent import EDAAgent
-from .ml_agent import MLAgent
-from .evaluator import EvaluatorAgent
-from .reporter import ReporterAgent
+from auto_ds_agent.agents.planner import PlannerAgent
+from auto_ds_agent.agents.data_agent import DataAgent
+from auto_ds_agent.agents.eda_agent import EDAAgent
+from auto_ds_agent.agents.ml_agent import MLAgent
+from auto_ds_agent.agents.evaluator import EvaluatorAgent
+from auto_ds_agent.agents.reporter import ReporterAgent
 
 __all__ = [
     "PlannerAgent",
